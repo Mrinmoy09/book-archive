@@ -4,7 +4,7 @@ const totalResult = document.getElementById('total-result');
 
 // fetch data
 const loadData = () => {
-    const url = `http://openlibrary.org/search.json?q=${searchText.value}`
+    const url = `https://openlibrary.org/search.json?q=${searchText.value}`
     fetch(url)
     .then(res => res.json())
     .then(data => displayBooks(data))
